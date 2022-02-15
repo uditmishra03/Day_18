@@ -29,7 +29,6 @@ def draw_shape(no_of_sides):
 for shape_side in range(3, 11):
     chosen_color = random.choice(colors)
     draw_shape(shape_side)
-    no_of_sides += 1
 
 screen = Screen()
 screen.exitonclick()
