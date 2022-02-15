@@ -49,6 +49,15 @@ def random_walk():
     # screen.ontimer(random_walk, 5)
 
 
-for _ in range(200):
-    random_walk()
+# for _ in range(200):
+#     random_walk()
+def draw_spirograph(size_of_gap):
+    for _ in range(int(360/size_of_gap)):
+        squirtle.circle(100)
+        chosen_color = random_color()
+        squirtle.pencolor(chosen_color)
+        squirtle.setheading(squirtle.heading() + size_of_gap)
+
+
+draw_spirograph(5)
 screen.exitonclick()
